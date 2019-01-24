@@ -1,0 +1,74 @@
+body {
+  background-image: url('../images/vector_image.png');
+}
+
+header {
+  width: 100%;
+  background-color: #fb9c9c;
+  margin-bottom: 25px;
+  border-bottom: .5rem solid #3399CC !important;
+}
+
+.btn-form-container {
+  background-color: #fb9c9c;
+  padding: 10px;
+}
+
+footer {
+  background-color: #fb9c9c;
+  border-top: .5rem solid #3399CC !important;
+  margin-top: 25px;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.row {
+  max-width: 960px;
+  margin: 0 auto !important;
+  padding-top: 20px;
+}
+
+.text-col {
+  margin: 20px;
+  padding: 20px 20px 10px 20px;
+}
+
+.query-gif {
+
+}
+
+.gifs {
+
+}
+
+#button-container {
+  text-align: center;
+}
+
+#search-form {
+  text-align: center;
+}
+
+#title {
+  text-align: center;
+}
+
+.error {
+  color: red;
+  margin-left: 5px;
+}
+
+label.error {
+  display: inline;
+}
+
+.img-thumbnail {
+  max-width: 150%;
+}
+
+.fixed-bottom {
+  position: fixed !important;
+}
