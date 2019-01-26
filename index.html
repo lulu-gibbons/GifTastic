@@ -8,39 +8,52 @@
   <title>GifTastic API Project</title>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Rokkitt" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 
 
 <body>
-  <header>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1 id="title">What's For Lunch!?</h1>
+  <div class="wrapper">
+
+    <div id="sidebar">
+
+
+      <section>
+        <!-- button and form container -->
+        <div class="row text-col">
+          <div class="col-md-12 body-text btn-form-container">
+            <h2>Choose Your Lunch!</h2>
+            <div class="row d-flex flex-fill flex-sm-wrap flex-md-wrap flex-lg-wrap" id="button-container"></div>
+            <form id="search-form">
+              <label for="search-input">Or Add What You Want!</label>
+              <input id="user-input" type="text" name="search-input">
+              <input id="add-input" type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+
+    <!-- gif container -->
+    <div class="gif-container">
+      <div class="top-bar">
+          <h1 id="title">What's For Lunch!?</h1>
+      </div>
+    <div class="gif-row">
+      <div class="card">
+        <div class="d-flex flex-sm-wrap flex-md-wrap flex-lg-wrap" id="query-gif"></div>
       </div>
     </div>
   </div>
-  </header>
-
-  <section class="container">
-
-    <div class="row text-col">
-      <div class="col-md-12 body-text btn-form-container">
-
-        <div id="button-container"></div>
-        <form id="search-form">
-          <label for="search-input">Search GIPHY!</label>
-          <input id="user-input" type="text" name="search-input">
-          <input id="add-input" type="submit" value="Submit">
-        </form>
-      </div>
-      <div class=" row col-md-12" id="query-gif"></div>
 
   </div>
-</section>
 
-<footer class="page-footer font-small fixed-bottom"></footer>
+
+
+
 
 
 
