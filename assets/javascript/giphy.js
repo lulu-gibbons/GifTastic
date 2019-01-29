@@ -35,7 +35,7 @@ $(document).on("click", ".search-button", function() {
   // Grabbing and storing the data-animal property value from the button
   var type = $(this).attr("data-name"); //creates a variable for the data-type attribute (value of each array item) for each button
   //console.log(type);
-  var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + type + "&api_key=qJjN6AsPV74YZ8RnGIMWVuvd0TUxI6OL&limit=8";
+  var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + type + "&api_key=qJjN6AsPV74YZ8RnGIMWVuvd0TUxI6OL&limit=9";
 
   // Performing an AJAX request with the queryURL
 
