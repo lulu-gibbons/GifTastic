@@ -78,7 +78,7 @@ section {
 .btn-form-container {
   background-color: #FFF;
   padding: 10px;
-  margin-top: 120px;
+  margin-top: 116px;
   margin-bottom: 20px;
   height: 100vh !important;
 }
@@ -125,6 +125,10 @@ p {
   font-weight: bold !important;
   padding: 5px !important;
   font-family: font-family: 'Rokkitt', serif !important;
+}
+
+.btn-info {
+  margin-top: 15px;
 }
 
 /*-- user input error message --*/

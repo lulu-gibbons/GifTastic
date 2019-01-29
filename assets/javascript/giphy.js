@@ -1,11 +1,11 @@
 //onload function...when page loads the buttons will populate...the addButtons function will run
 $(document).ready(function() {
-  addButtons(gifArray, "search-button");
+  addButtons(topics, "search-button");
   //console.log("test");
 })
 
 //button value array
-var gifArray = [
+var topics = [
   "salad",
   "tacos",
   "spaghetti",
@@ -16,14 +16,14 @@ var gifArray = [
 ];
 
 //ADD BUTTONS
-function addButtons(gifArray, addClassTo) {
+function addButtons(topics, addClassTo) {
   $("#button-container").empty(); //clears buttons out everytime onload function runs....avoids duplicating buttons that a user adds
-  for (var i = 0; i < gifArray.length; i++) {
+  for (var i = 0; i < topics.length; i++) {
     var btn = $("<button>"); //loops through and creates buttons for array values
     btn.addClass(addClassTo); //adds a class to all the buttons
     btn.addClass("btn btn-outline-info");
-    btn.attr('data-name', gifArray[i]); //adds a type to the button that is the name of each item in the array
-    btn.text(gifArray[i]); //adds the name of each item in the array as text to the button
+    btn.attr('data-name', topics[i]); //adds a type to the button that is the name of each item in the array
+    btn.text(topics[i]); //adds the name of each item in the array as text to the button
     $("#button-container").append(btn); //adds each button one after the other in the button container div
     //console.log(btn);
   }
@@ -96,8 +96,8 @@ $("#add-input").on("click", function(event) {
   if (newUserInput.length < 1) {  //adds an error message if user enters nothing in the input box....keeps user from adding blank boxes
     $('form').append('<p class="error">This field is required</p>');
   } else {
-    gifArray.push(newUserInput); //pushed the user's input to the array so a new button can be added
+    topics.push(newUserInput); //pushed the user's input to the array so a new button can be added
     $('#user-input').val('');
-    addButtons(gifArray, "search-button"); // runs the addButton function again to clear and add the new set off buttons in the array which will include the user's input
+    addButtons(topics, "search-button"); // runs the addButton function again to clear and add the new set off buttons in the array which will include the user's input
   }
 });
