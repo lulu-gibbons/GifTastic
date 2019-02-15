@@ -12,3 +12,6 @@
   * They do this by typing into the input box and choosing 'Submit'. This will ad a new button.
   
 Refreshing the screen will return the page to it's default settings. 
+
+### Link to the project:
+https://lulu-gibbons.github.io/GifTastic/
